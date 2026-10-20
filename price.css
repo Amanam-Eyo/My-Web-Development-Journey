@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12px;
+    margin-top: 3px;
+    background: coral;
+    position: fixed;
+}
+
+.n2{
+    background: bisque;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    padding: 10px;
+    font-family: New Times Romans;
+    color: navy;
+}
+
+.n1{
+    background: bisque;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    padding: 10px;
+    font-family: New Times Romans;
+    color: navy;
+}
+
+a{    
+    text-decoration: none;
+    color: navy;
+    font-family: New Times Romans;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    line-height: 2;
+    padding: 10px;
+}
+
+#card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: url('AIE LOGO.png');
+    gap: 20px;
+}
+
+.price-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 5px solid carol ;
+    background: url('po.png');
+    background: opacity 0.5;
+}
+
+.price-card p{
+    text-transform: capitalize;
+    margin: 10px;
+    background: whitesmoke;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(09,60,99,0.3);
+}
+
+.price-card img{
+    width: 200px;
+    height: 200px;
+    border-bottom-color: 4px ridge dodgerblue;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.btn{
+    background: coral;
+    border-radius: 10%;
+    font-weight:bold ;
+    text-transform: uppercase;
+    margin: 10px;
+    color: white;
+    padding: 6px;
+    
+    transition: 0.7s ease-in;
+    
+}
+
+.btn:hover{
+    transform: scale3d(0.9);
+    opacity: 0.7;
+    color: black;
+    background: white;
+}
+
+li{
+    padding: 10px;
+    list-style: none;
+}
+
+.price-card img:hover{
+    transform: scaleY(0.8);
+}
+@media(min-width: 320px){
+    #card{
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+        width: auto;
+    }
+    .n2{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    #card{
+        grid-template-columns:  repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1020px){
+    #card{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
